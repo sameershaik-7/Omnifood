@@ -18,8 +18,8 @@ SPACING SYSTEM (px)
 --- 02 COLORS
 
 - Primary: #e67e22
-- Tints
-- Shades
+- Tints: #fdf2e9
+- Shades: #cf711f
 - Accents
 - Greys #555 / #333 
 
@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -88,7 +88,7 @@ body {
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 9px;
-
+  font-weight: 600;
   transition: all 0.3s;
   /* we always put transition property on the original "state" */
 }
@@ -124,4 +124,39 @@ body {
 /* HELPER CLASS */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  margin-top: 8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  /* to make the images overlap each other */
+  margin-right: -1.4rem;
+  border: 3px solid #fdf2e9;
+}
+
+/* to remove the margin from the last image */
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
