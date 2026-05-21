@@ -122,7 +122,7 @@ body {
 .subheading {
   display: block;
   font-size: 2rem;
-  font-size: 500;
+  font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
