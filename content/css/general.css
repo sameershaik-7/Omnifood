@@ -73,7 +73,7 @@ body {
   /* 1140px */
   max-width: 120rem;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 0 3.2rem;
 }
 
 .grid {
@@ -111,7 +111,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 6.4rem;
 }
 
 .heading-tertiary {
@@ -173,6 +173,14 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
 strong {
   font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
 }
