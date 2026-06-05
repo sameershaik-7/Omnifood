@@ -28,15 +28,16 @@ SPACING SYSTEM (px)
 --- 02 COLORS
 
 - Primary: #e67e22
-- Tints: 
+- Tints:
 #fdf2e9
 #fae5d3
 - Shades: #cf711f
 - Accents
-- Greys #555 / #333 
+- Greys #555 / #333
 #6f6f6f - lightest grey allowed on #fdf2e9
 
 --- 03 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.06);
 
 --- 04 BORDER-RADIUS
 
