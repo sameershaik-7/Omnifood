@@ -13,7 +13,6 @@ navigationBtn.addEventListener("click", function () {
 
 // smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -39,3 +38,25 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+// sticky navigation
+const sectionHeroEl = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // in the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px" /* because we set the sticky nav as 8rem height */,
+  },
+);
+obs.observe(sectionHeroEl);
