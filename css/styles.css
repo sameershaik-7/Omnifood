@@ -357,6 +357,11 @@
   column-gap: 8rem;
 }
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
